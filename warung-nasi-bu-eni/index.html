@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Katalog menu Warung Nasi Bu Eni: masakan rumahan khas nusantara yang lezat dan segar setiap hari.">
+    <meta name="theme-color" content="#124734">
+    <title>Warung Nasi Bu Eni — Katalog Menu</title>
+
+    <link rel="icon" type="image/jpeg" href="assets/icons/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Lewati ke konten</a>
+
+    <!-- Tahap 2: Navbar sticky dengan menu hamburger untuk ponsel -->
+    <header class="site-header" id="siteHeader">
+        <nav class="navbar container" aria-label="Navigasi utama">
+            <a class="brand" href="#beranda" aria-label="Warung Nasi Bu Eni, kembali ke beranda">
+                <span class="brand-mark" aria-hidden="true">
+                    <img class="brand-logo" src="assets/icons/logo.jpeg" alt="" width="44" height="44">
+                </span>
+                <span class="brand-text">
+                    <span class="brand-top">WARUNG NASI</span>
+                    <span class="brand-bottom">BU ENI</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a class="nav-link is-active" href="#beranda">Beranda</a></li>
+                    <li><a class="nav-link" href="#menu">Menu</a></li>
+                    <li><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+                    <li><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+                <a class="btn btn-primary nav-cta" href="#menu">
+                    <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+                    Lihat Menu
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Tahap 2: Hero section dengan foto makanan dan tombol utama -->
+        <section class="hero" id="beranda">
+            <div class="hero-glow" aria-hidden="true"></div>
+
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">
+                        <i class="bi bi-stars" aria-hidden="true"></i>
+                        Masakan rumahan khas nusantara
+                    </p>
+
+                    <h1>Nikmati Kelezatan <span>Masakan Bu Eni</span></h1>
+
+                    <p class="hero-description">
+                        Dari dapur kami ke meja makan Anda. Setiap hidangan dimasak segar
+                        dengan bumbu pilihan dan resep warisan keluarga, menghadirkan rasa
+                        rumah yang hangat di setiap suapan.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#menu">
+                            Jelajahi Menu
+                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a class="btn btn-outline" href="#tentang">
+                            <i class="bi bi-info-circle" aria-hidden="true"></i>
+                            Tentang Kami
+                        </a>
+                    </div>
+
+                    <div class="hero-stats" aria-label="Informasi singkat warung">
+                        <div class="hero-stat">
+                            <strong id="menuCount">25</strong>
+                            <span>pilihan menu</span>
+                        </div>
+                        <div class="hero-stat">
+                            <strong>8</strong>
+                            <span>kategori masakan</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-main">
+                        <img src="assets/images/hero/hero-utama.webp" alt="Ayam panggang khas Indonesia disajikan hangat" width="800" height="1000">
+                    </div>
+
+                    <div class="hero-floating hero-floating-one">
+                        <img src="assets/images/hero/hero-samping-1.jpg" alt="Ikan nila goreng renyah" width="400" height="400">
+                    </div>
+
+                    <div class="hero-floating hero-floating-two">
+                        <img src="assets/images/hero/hero-samping-2.webp" alt="Nasi uduk dengan bumbu santan" width="400" height="400">
+                    </div>
+
+                    <div class="hero-badge">
+                        <i class="bi bi-patch-check-fill" aria-hidden="true"></i>
+                        <span>Dimasak segar setiap hari</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-wave" aria-hidden="true">
+                <svg viewBox="0 0 1440 70" preserveAspectRatio="none">
+                    <path d="M0,32 C240,70 480,0 720,28 C960,56 1200,70 1440,24 L1440,70 L0,70 Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Tahap 3: Kategori dan katalog menu -->
+        <section class="menu-section" id="menu" aria-labelledby="menuTitle">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-eyebrow">
+                        <i class="bi bi-journal-bookmark-fill" aria-hidden="true"></i>
+                        Katalog kami
+                    </p>
+                    <h2 id="menuTitle">Pilihan Menu <span>Bu Eni</span></h2>
+                    <p>
+                        Berbagai masakan nusantara yang dimasak segar setiap hari.
+                        Pilih menu favorit Anda, lalu pesan langsung lewat WhatsApp.
+                    </p>
+                </div>
+
+                <div class="price-notice" role="note">
+                    <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+                    <span><strong>Catatan:</strong> harga di bawah adalah harga untuk sementara dan harga bisa berubah kapan saja.</span>
+                </div>
+
+                <!-- Tahap 4: pencarian nama dan status jumlah hasil -->
+                <div class="menu-toolbar">
+                    <label class="search-box" for="searchInput">
+                        <i class="bi bi-search" aria-hidden="true"></i>
+                        <input type="search"
+                               id="searchInput"
+                               placeholder="Cari menu favoritmu..."
+                               autocomplete="off"
+                               aria-label="Cari menu berdasarkan nama">
+                        <button class="search-clear" id="clearSearch" type="button" aria-label="Hapus pencarian" hidden>
+                            <i class="bi bi-x-circle-fill" aria-hidden="true"></i>
+                        </button>
+                    </label>
+                    <p class="result-count" id="resultCount" aria-live="polite">Menampilkan 25 dari 25 menu</p>
+                </div>
+
+                <div class="category-tabs" id="categoryTabs" role="group" aria-label="Kategori menu"></div>
+
+                <div class="menu-grid" id="menuGrid"></div>
+
+                <p class="empty-state" id="emptyState" hidden>
+                    Menu tidak ditemukan. Coba kata kunci atau kategori lain.
+                </p>
+            </div>
+        </section>
+
+        <div class="section-anchor" id="tentang"></div>
+
+        <section class="contact-section" id="kontak" aria-labelledby="kontakTitle">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-eyebrow">
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        Kontak &amp; Lokasi
+                    </p>
+                    <h2 id="kontakTitle">Mampir atau <span>Chat Kami</span></h2>
+                    <p>
+                        Temukan lokasi warung, lihat jam buka, dan scan QR WhatsApp
+                        untuk memesan dengan lebih cepat.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="contact-card contact-card--map">
+                        <h3 class="contact-card-title">
+                            <i class="bi bi-map-fill" aria-hidden="true"></i>
+                            Lokasi Warung
+                        </h3>
+                        <div class="contact-map-frame">
+                            <iframe id="contactMap"
+                                    title="Lokasi Warung Nasi Bu Eni di Google Maps"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <a class="contact-map-link" id="contactMapLink" href="https://maps.app.goo.gl/RDZDmt1LAMd37f129" target="_blank" rel="noopener noreferrer">
+                            Buka di Google Maps
+                            <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <div class="contact-side">
+                        <article class="contact-card">
+                            <h3 class="contact-card-title">
+                                <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+                                Informasi Kontak
+                            </h3>
+                            <ul class="contact-detail-list">
+                                <li>
+                                    <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                                    <span id="contactAddress">Alamat warung belum diatur</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                                    <span id="contactHours">Jam operasional belum diatur</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                    <span id="contactWhatsapp">6282163199525</span>
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary contact-whatsapp-button" id="contactWhatsappButton" type="button">
+                                <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                                Chat WhatsApp
+                            </button>
+                        </article>
+
+                        <article class="contact-card contact-card--qr">
+                            <h3 class="contact-card-title">
+                                <i class="bi bi-qr-code" aria-hidden="true"></i>
+                                Scan QR WhatsApp
+                            </h3>
+                            <div class="contact-qr-frame">
+                                <img id="contactQr"
+                                     src="assets/icons/qr.jpeg"
+                                     alt="QR Code WhatsApp Warung Nasi Bu Eni"
+                                     width="220"
+                                     height="220"
+                                     loading="lazy">
+                            </div>
+                            <p class="contact-qr-caption">Scan dengan ponsel untuk langsung chat dengan kami.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="brand brand--footer" href="#beranda" aria-label="Warung Nasi Bu Eni, kembali ke beranda">
+                    <span class="brand-mark" aria-hidden="true">
+                        <img class="brand-logo" src="assets/icons/logo.jpeg" alt="" width="44" height="44">
+                    </span>
+                    <span class="brand-text">
+                        <span class="brand-top">WARUNG NASI</span>
+                        <span class="brand-bottom">BU ENI</span>
+                    </span>
+                </a>
+                <p>
+                    Menyajikan masakan rumahan khas nusantara dengan bumbu pilihan
+                    dan cita rasa yang selalu bikin ingin pulang lagi.
+                </p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Navigasi footer">
+                <h2 class="footer-heading">Navigasi</h2>
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-contact">
+                <h2 class="footer-heading">Kontak</h2>
+                <ul>
+                    <li>
+                        <button class="footer-contact-button" id="footerWhatsappButton" type="button" aria-label="Hubungi Warung Nasi Bu Eni lewat WhatsApp">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
+                            <span id="footerWhatsappLabel">628xxxxxxxxxx</span>
+                        </button>
+                    </li>
+                    <li>
+                        <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                        <span id="footerAddress">Alamat warung belum diatur</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-clock-fill" aria-hidden="true"></i>
+                        <span id="footerHours">Jam operasional belum diatur</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; <span id="currentYear">2026</span> Warung Nasi Bu Eni. Semua hak dilindungi.</p>
+            <a class="back-to-top" href="#beranda">
+                Kembali ke atas
+                <i class="bi bi-arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Tahap 5: notifikasi jika nomor WhatsApp belum diatur -->
+    <div class="whatsapp-toast" id="whatsappToast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
